@@ -5,5 +5,5 @@ Repo for "Contemporary Programming Language: Go"
 
 [www.altruiststudios.com](https://www.altruiststudios.com/)
 
-<img src="https://avatars.githubusercontent.com/u/48135909?v=4" width="100" style="height:auto; border-radius:50%;">
+<img style="height:auto; border-radius:50%;" width="100" src="https://avatars.githubusercontent.com/u/48135909?v=4" >
 
