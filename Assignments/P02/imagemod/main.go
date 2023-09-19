@@ -1,7 +1,8 @@
 package main
 
 import (
-	"./imageManipulator/imageManipulator.go"
+	// [module name]/[package name from subdirectory]
+	"myimageapp/imageManipulator"
 )
 
 func main() {
