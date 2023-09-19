@@ -8,13 +8,25 @@ import (
 
 // ImageManipulator represents an image manipulation tool.
 type ImageManipulator struct {
-	Image *gg.Context
+	Image     *gg.Context
+	ImagePath string // Add a field to store the image path
 }
 
 // NewImageManipulator creates a new ImageManipulator instance.
 func NewImageManipulator(width, height int) *ImageManipulator {
 	img := gg.NewContext(width, height)
 	return &ImageManipulator{Image: img}
+}
+
+// NewImageManipulatorWithImage loads an existing image and creates an ImageManipulator instance.
+func NewImageManipulatorWithImage(imagePath string) (*ImageManipulator, error) {
+	img, err := gg.LoadImage(imagePath)
+	if err != nil {
+		return nil, err
+	}
+
+	ctx := gg.NewContextForImage(img)
+	return &ImageManipulator{Image: ctx, ImagePath: imagePath}, nil
 }
 
 // SaveToFile saves the manipulated image to a file.
