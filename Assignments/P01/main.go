@@ -7,7 +7,7 @@
 //
 //	 Prints the mascot name for MSU
 //		by calling a function from
-//		a file in another folder
+//		a file in another folder.
 package main
 
 import (
