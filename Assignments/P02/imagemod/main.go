@@ -15,7 +15,7 @@ func main() {
 		return
 	}
 
-	// Draw a rectangle
+	// Draw a rectangle over the image
 	im.DrawRectangle(150, 50, 560, 411)
 
 	// Save the modified image to a file
